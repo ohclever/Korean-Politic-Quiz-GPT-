@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국 근현대사로 알아보는 나의 정치 성향</title>
+<style>
+:root{--navy:#102a56;--blue:#2867d7;--light:#f4f7fb;--text:#172033;--muted:#718096;--line:#dce3ee;--red:#e34b55}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif;background:var(--light);color:var(--text)}
+.hero{background:linear-gradient(135deg,#0d2549,#193f78);color:white;padding:48px 20px 90px;position:relative;overflow:hidden}
+.hero:after{content:"대한제국  ·  3·1운동  ·  해방  ·  대한민국";position:absolute;right:-20px;bottom:22px;font-size:clamp(24px,5vw,64px);font-weight:900;opacity:.06;white-space:nowrap}
+.wrap{max-width:1100px;margin:auto}.eyebrow{color:#ffd95a;font-weight:800;font-size:18px}.hero h1{font-size:clamp(34px,6vw,66px);line-height:1.04;margin:8px 0 18px;letter-spacing:-3px}.hero p{max-width:700px;line-height:1.7;color:#dce7f7}
+.panel{background:white;border:1px solid var(--line);border-radius:18px;box-shadow:0 15px 45px #132d5b14}
+.stats{margin:-48px auto 28px;position:relative;display:grid;grid-template-columns:repeat(3,1fr);padding:20px}.stat{padding:10px 24px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat b{display:block;font-size:22px;margin-top:4px}.stat span{color:var(--muted);font-size:13px}
+.layout{display:grid;grid-template-columns:250px 1fr;gap:18px}.eras{padding:18px}.eras h3{margin:4px 8px 16px}.era{display:flex;gap:10px;align-items:center;padding:11px 8px;border-radius:10px;color:#536174;font-size:14px}.era.active{background:#edf4ff;color:#1555bd;font-weight:800}.dot{width:27px;height:27px;border-radius:50%;display:grid;place-items:center;background:#e6edf8;color:#2965c7;font-size:12px;font-weight:800;flex:none}.era.active .dot{background:var(--blue);color:white}
+.quiz{padding:26px}.topline{display:flex;justify-content:space-between;align-items:center;color:#607087;font-size:14px}.bar{height:8px;background:#e5eaf2;border-radius:99px;margin:12px 0 28px;overflow:hidden}.bar i{display:block;height:100%;background:var(--blue);width:0;transition:.3s}.tag{display:inline-block;background:#edf4ff;color:#1555bd;padding:7px 10px;border-radius:7px;font-weight:800;font-size:13px}.quiz h2{font-size:26px;letter-spacing:-1px;margin:15px 0 20px}.option{display:block;border:1px solid var(--line);border-radius:12px;padding:16px;margin:10px 0;cursor:pointer;transition:.15s;background:white}.option:hover{border-color:#8db2ef;background:#f8fbff}.option input{margin-right:10px}.option.selected{border-color:var(--blue);background:#eef5ff;box-shadow:0 0 0 2px #2867d71a}.actions{display:flex;justify-content:space-between;gap:10px;margin-top:22px}.btn{border:0;border-radius:10px;padding:13px 22px;font-weight:800;cursor:pointer;font-size:15px}.prev{background:#e8ecf2;color:#667386}.next{background:var(--blue);color:white}.note{font-size:13px;color:#718096;margin-top:16px}
+.result{display:none;margin-top:20px;padding:30px}.result.show{display:block}.result h2{text-align:center;font-size:36px;margin:5px}.level{text-align:center;color:#2867d7;font-size:42px;font-weight:900}.spectrum{margin:28px 0 8px;height:12px;border-radius:20px;background:linear-gradient(90deg,#265fd5,#7c83db,#e44e58);position:relative}.marker{position:absolute;top:-9px;width:30px;height:30px;border-radius:50%;background:white;border:5px solid var(--navy);transform:translateX(-50%)}.labels{display:flex;justify-content:space-between;font-size:12px;color:#657287}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:25px}.box{border:1px solid var(--line);border-radius:14px;padding:20px}.box h3{margin-top:0}.metric{margin:14px 0}.metrichead{display:flex;justify-content:space-between;font-size:13px}.meter{height:8px;background:#e8edf4;border-radius:9px;margin-top:6px}.meter i{display:block;height:100%;background:var(--blue);border-radius:9px}.summary{margin-top:18px;line-height:1.8;background:#f7f9fc;padding:20px;border-radius:14px}.restart{display:block;margin:20px auto 0;background:var(--blue);color:white}.start{padding:45px;text-align:center}.start h2{font-size:34px}.start p{color:#64748b;line-height:1.8}.start .btn{margin-top:10px}
+footer{text-align:center;color:#8a96a8;font-size:12px;padding:28px}
+@media(max-width:800px){.layout{grid-template-columns:1fr}.eras{display:none}.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line);padding:10px}.stat:last-child{border:0}.grid2{grid-template-columns:1fr}.hero{padding-bottom:70px}.quiz{padding:20px}.result{padding:20px}.level{font-size:34px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<div class="eyebrow">한국 근현대사로 알아보는</div>
+<h1>나의 정치 성향 테스트</h1>
+<p>대한제국부터 민주화까지. 역사적 갈림길에서 당신은 어떤 해석과 선택에 더 가까울까요?<br>정답을 맞히는 시험이 아니라, 한국 현대사를 바라보는 당신의 가치와 서사를 분석합니다.</p>
+</div></header>
+
+<main class="wrap">
+<section class="panel stats">
+<div class="stat"><span>전체 문항</span><b>40문항</b></div>
+<div class="stat"><span>예상 소요 시간</span><b>10~15분</b></div>
+<div class="stat"><span>진행률</span><b id="progressText">준비 완료</b></div>
+</section>
+
+<section id="start" class="panel start">
+<h2>역사적 갈림길에 답해주세요.</h2>
+<p>각 문항에는 정답이 없습니다.<br>“무엇이 사실인가”보다 <b>“어떤 해석에 더 가까운가”</b>를 선택해주세요.</p>
+<button class="btn next" onclick="begin()">테스트 시작하기</button>
+</section>
+
+<section id="test" class="layout" style="display:none">
+<aside class="panel eras" id="eras"></aside>
+<div class="panel quiz">
+<div class="topline"><b id="counter">1 / 40</b><span id="pct">3%</span></div>
+<div class="bar"><i id="bar"></i></div>
+<div id="question"></div>
+<div class="actions"><button class="btn prev" id="prev" onclick="move(-1)">이전</button><button class="btn next" id="next" onclick="move(1)">다음</button></div>
+<div class="note">ⓘ 역사적 사실에 대한 지식보다 자신의 직관과 가치판단에 따라 선택해도 좋습니다.</div>
+</div>
+</section>
+
+<section id="result" class="panel result"></section>
+</main>
+<footer>※ 이 테스트는 특정 정당이나 후보에 대한 지지 여부가 아니라 한국 근현대사를 바라보는 정치·역사적 성향을 탐색하기 위한 비공식 테스트입니다.</footer>
+
+<script>
+const eras=["대한제국과 개화기","동학·일제강점기","3·1운동과 임시정부","해방과 정부수립","6·25 전쟁","이승만 시대","박정희 시대","전두환과 민주화"];
+const qs=[
+["고종 황제에 대한 평가로 가장 가까운 것은?",["근대화를 추진하고 외교적 독립을 지키려 했던 군주에 가깝다.","개혁 의지는 있었지만 국정 운영의 한계가 컸던 군주다.","당시의 복잡한 국제정세와 내부 권력구조를 함께 봐야 한다.","구체제의 한계를 극복하지 못했고 국가적 위기에 책임이 있다."]],
+["대한제국 선포의 의미를 가장 가깝게 본다면?",["조선의 정통성을 이어가는 국가적 자주성의 선언이다.","왕조 국가가 근대 국가로 전환하려 한 중요한 시도다.","왕정의 연속성보다 이후 국민주권 국가로의 전환이 중요하다.","구체제의 연장선에 불과했으며 근본적 변화는 아니었다."]],
+["대한제국의 근대화 정책을 평가한다면?",["짧은 기간에도 자주적 근대화를 추진한 성과를 높이 평가해야 한다.","성과와 한계를 모두 인정해야 한다.","근대화의 방향과 실행력에 상당한 한계가 있었다.","당시의 체제 자체가 근대 국가로 전환되기 어려웠다고 본다."]],
+["을사늑약 전후 대한제국의 외교를 어떻게 보는가?",["국제사회에 도움을 요청하며 주권을 지키려 했던 측면이 중요하다.","외교적 대응의 한계가 있었지만 외세의 강압이 본질이었다.","국내 정치의 무능과 열강의 압력이 함께 작용했다.","대한제국 지도층의 외교·정치적 책임도 상당히 크다."]],
+["동학농민운동을 가장 가깝게 설명하면?",["외세의 침략과 부패한 지배에 맞선 민중 저항이었다.","반봉건·사회개혁적 성격이 강한 농민운동이었다.","종교·사회·정치적 요구가 복합된 운동으로 보는 것이 적절하다.","국가 질서를 무너뜨린 무장봉기의 성격도 무시할 수 없다."]],
+["일제강점기의 산업·교육·인프라 변화를 평가할 때?",["식민지 지배의 수탈 구조가 핵심이며 근대화 성과는 부차적이다.","일부 변화는 있었지만 식민지 지배를 정당화할 수는 없다.","식민지 지배와 근대적 변화가 동시에 존재했다는 점을 구분해야 한다.","식민통치가 한국의 근대화에 일정한 기반을 제공한 측면도 평가해야 한다."]],
+["3·1운동의 가장 중요한 의미는?",["민족 독립과 자주국가 건설을 요구한 거대한 민족운동이다.","국민주권과 독립의식을 확산시킨 사건이다.","이후 임시정부와 공화정으로 이어지는 정치적 전환점이다.","독립운동의 상징성이 크지만 이후 국가건설 과정과 별도로 봐야 한다."]],
+["대한민국 임시정부의 역사적 의미는?",["대한민국의 정통성이 출발한 핵심적인 국가적 기반이다.","독립운동 세력이 만든 공화정의 중요한 전통이다.","상징성과 역사적 의미는 크지만 1948년 정부와 동일시해서는 안 된다.","독립운동 조직으로서 의미가 있지만 국가 정통성은 별도로 평가해야 한다."]],
+["해방 직후 가장 우선했어야 할 과제는?",["남북을 아우르는 통일정부를 만드는 것이 우선이었다.","좌우가 타협할 수 있는 정치체제를 만드는 것이 중요했다.","국제정세를 고려해 가능한 정부부터 수립해야 했다.","공산주의 확산을 막고 자유민주주의 국가를 세우는 것이 우선이었다."]],
+["미군정의 역할을 어떻게 보는가?",["남한의 정치구조와 분단에 큰 영향을 미친 것이 중요하다.","긍정적 역할과 부정적 역할을 함께 봐야 한다.","혼란 속에서 행정·안보를 유지하는 현실적 역할도 있었다.","미국의 개입 자체보다 소련과 북한의 공산화가 더 결정적이었다."]],
+["대한민국 정부 수립의 의미는?",["분단을 고착시킨 한계가 있지만 현실적 국가 건설이었다.","자유민주주의 국가를 세운 역사적 출발점이다.","남북 분단이라는 조건 속에서 불가피했던 선택이었다.","임시정부와 독립운동의 계승이라는 측면이 더 중요하다."]],
+["김구의 통일정부 노선에 대해?",["분단을 막기 위한 원칙 있는 선택이었다.","이상적이지만 당시 국제정세상 실현 가능성이 낮았다.","통일정부의 필요성과 현실 정치 사이의 긴장을 함께 봐야 한다.","국가 수립을 늦추는 결과가 될 수 있었다."]],
+["이승만의 정부수립 노선에 대해?",["공산주의 확산 속에서 현실적인 국가건설을 추진한 선택이었다.","역사적 필요성이 있었지만 정치적 독주가 문제였다.","분단을 심화시킨 책임도 상당히 고려해야 한다.","당시에는 통일정부를 우선했어야 했다."]],
+["1950년 6월 25일 전쟁의 성격은?",["북한이 주도한 남침으로 보는 것이 핵심이다.","북한의 공격으로 시작됐지만 냉전 국제전으로 확대됐다.","남북한의 군사적 충돌과 냉전구조를 함께 봐야 한다.","미국과 남한의 정책도 전쟁 발발의 배경으로 중요하게 봐야 한다."]],
+["6·25 전쟁에서 소련과 중국의 역할을 어떻게 보는가?",["북한의 전쟁 수행을 가능하게 한 핵심 외부 요인이었다.","전쟁의 국제화를 결정한 중요한 요인이었다.","미국의 개입과 함께 냉전 양대 진영의 대결로 봐야 한다.","미국의 개입과 대결구조도 동등하게 중요하게 봐야 한다."]],
+["한미동맹에 대한 평가는?",["대한민국의 안보와 생존에 핵심적인 역할을 했다.","안보상 중요하지만 외교적 자율성 문제도 고려해야 한다.","미국 의존도가 지나치게 커지는 문제를 경계해야 한다.","한미동맹보다 자주적 외교와 남북관계가 우선되어야 한다."]],
+["이승만 정부를 평가할 때 가장 중요한 기준은?",["건국·반공·한미동맹의 공로를 높게 평가해야 한다.","공적과 독재·부정선거를 함께 평가해야 한다.","민주주의 훼손의 책임이 상당히 크다.","권위주의적 국가운영이 대한민국 정치에 남긴 폐해가 매우 크다."]],
+["4·19 혁명을 어떻게 평가하는가?",["독재에 맞선 시민의 민주주의 혁명이라는 점이 핵심이다.","정권의 부정선거에 대한 정당한 저항이었다.","정치적 혼란과 국가안보 문제도 함께 고려해야 한다.","당시의 급격한 정권교체가 이후 혼란을 키운 측면도 있다."]],
+["박정희의 5·16에 대한 평가는?",["헌정질서를 중단시킨 군사쿠데타라는 점이 핵심이다.","경제개발의 출발점이 되었지만 민주주의 훼손이 있었다.","당시의 정치·경제적 혼란을 고려할 필요가 있다.","국가 재건과 안보를 위한 불가피한 선택이었다고 볼 여지가 있다."]],
+["박정희 시대의 산업화를 평가한다면?",["산업화의 성과가 한국의 국가발전에 결정적이었다.","성과는 크지만 노동·인권·민주주의의 비용도 컸다.","경제성장보다 권위주의 체제의 문제를 더 중시해야 한다.","산업화는 독재와 분리해서 평가하기 어렵다."]],
+["유신체제에 대한 평가는?",["국가안보와 경제발전을 이유로 정당화하기 어렵다.","당시 안보환경을 이해해야 하지만 민주주의 훼손이 컸다.","국가적 위기 대응이라는 측면도 있었으나 장기화는 문제였다.","정치적 자유를 제한한 권위주의 체제로 보는 것이 타당하다."]],
+["박정희에 대한 종합평가로 가장 가까운 것은?",["한국 산업화의 핵심 지도자라는 평가가 우선이다.","산업화의 공과 민주주의의 과를 동시에 평가해야 한다.","경제적 성과보다 민주주의·인권 문제를 더 크게 봐야 한다.","권위주의 발전모델 자체에 대한 비판적 평가가 필요하다."]],
+["12·12 사태에 대한 평가는?",["군 내부의 권력 장악을 위한 정치적 사건이었다.","신군부가 헌정질서를 장악한 과정으로 봐야 한다.","당시의 군 내부 혼란도 고려해야 하지만 정당화하기 어렵다.","국가 안정이라는 명분보다 헌정질서 훼손이 본질이다."]],
+["5·18 민주화운동을 어떻게 보는가?",["군부의 무력진압에 맞선 민주화운동이라는 점이 핵심이다.","민주주의와 시민의 희생을 중심으로 이해해야 한다.","지역·정치적 갈등까지 포함한 복합적 맥락을 봐야 한다.","당시 안보상황과 무장충돌의 맥락도 함께 고려해야 한다."]],
+["전두환 정부의 경제정책에 대한 평가?",["경제적 성과가 있더라도 정치적 정당성을 대신할 수 없다.","경제 안정의 성과는 인정하되 권위주의를 비판해야 한다.","경제 안정과 민주주의를 별개의 평가축으로 봐야 한다.","국가 안정과 경제성장의 성과를 상대적으로 높게 평가할 수 있다."]],
+["6월 민주항쟁의 의미는?",["대한민국 민주주의를 실질적으로 전환시킨 결정적 시민운동이다.","권위주의 체제에 대한 시민사회의 승리였다.","정치적 타협과 제도 변화까지 함께 봐야 한다.","민주화의 의미는 인정하지만 이후 정치적 혼란도 고려해야 한다."]],
+["한국의 민주화 과정에 대한 평가로 가장 가까운 것은?",["시민의 지속적인 저항과 희생이 민주주의를 만들었다.","민주화는 국가발전의 필수적인 다음 단계였다.","권위주의와 민주화 모두 한국 현대사의 일부로 봐야 한다.","안보와 경제성장을 먼저 확보한 뒤 민주화가 가능했다고 본다."]],
+["대한민국 현대사를 이해하는 데 가장 중요한 기준은?",["민족의 독립과 자주성이다.","민주주의와 시민의 권리다.","국가의 안정과 경제발전이다.","냉전과 자유민주주의 체제의 수호다."]],
+["한국의 분단 책임을 평가한다면?",["미국과 소련의 냉전구조가 핵심이다.","남북한 정치세력과 강대국의 책임을 함께 봐야 한다.","북한의 공산화와 소련의 영향이 더 결정적이었다.","남한의 단독정부 수립 과정도 분단 책임에서 중요하다."]],
+["북한 체제에 대한 평가로 가장 가까운 것은?",["대한민국과 대립하는 권위주의·전체주의 체제로 보는 것이 타당하다.","북한 정권의 문제를 인정하면서도 주민과 정권은 구분해야 한다.","안보상 경계하면서도 장기적 통일·교류를 고려해야 한다.","북한과의 화해·협력을 위해 체제에 대한 적대적 인식을 줄여야 한다."]],
+["대북정책에서 가장 중요한 원칙은?",["확고한 안보와 억제가 우선이다.","안보를 유지하면서 필요할 때 대화해야 한다.","대화와 억제를 병행해야 한다.","교류와 협력을 확대해 충돌 가능성을 낮춰야 한다."]],
+["한일관계를 바라보는 기준은?",["과거사 문제와 식민지 책임을 우선해야 한다.","과거사 해결과 현실적 협력을 함께 추구해야 한다.","미래의 안보·경제 협력을 위해 역사 문제를 관리해야 한다.","한일 안보·경제협력의 실익을 우선적으로 고려해야 한다."]],
+["일제강점기 친일 문제에 대한 기준은?",["해방 이후에도 적극적인 역사적 책임을 물어야 한다.","협력의 정도와 행위별로 구분해 평가해야 한다.","당시의 시대적 강요와 개인의 선택을 함께 고려해야 한다.","현재의 정치적 기준으로 과거 인물을 일괄적으로 판단하는 것은 경계해야 한다."]],
+["대한민국 건국을 어떻게 표현하는 것이 가장 적절한가?",["1919년의 독립운동과 임시정부에서 국가의 정통성이 출발했다.","1919년의 정신과 1948년의 정부 수립이 연결되어 있다.","1948년 정부 수립이 실질적인 대한민국 국가체제의 출발이다.","1948년 자유민주주의 국가 건설의 의미를 가장 중요하게 본다."]],
+["한국 현대사의 가장 큰 성공을 하나 꼽는다면?",["민족 독립과 국가의 생존이다.","민주주의의 발전이다.","산업화와 경제성장이다.","자유민주주의 체제와 안보를 지켜낸 것이다."]],
+["한국 현대사의 가장 큰 실패를 하나 꼽는다면?",["분단과 민족 내부의 대립이다.","독재와 민주주의 훼손이다.","경제발전 과정에서 발생한 사회적 희생이다.","북한의 공산화와 안보 위협을 충분히 막지 못한 것이다."]],
+["역사적 인물을 평가할 때 가장 중요한 기준은?",["국가와 민족을 위해 무엇을 했는가.","민주주의와 인간의 권리를 얼마나 지켰는가.","국가 발전에 어떤 실질적 결과를 만들었는가.","당시의 국제정세와 국가안보에 어떤 기여를 했는가."]],
+["다음 중 당신이 가장 중요하게 생각하는 가치는?",["민족적 자주와 통합","민주주의와 시민의 자유","안정과 실용적 국가발전","자유민주주의와 국가안보"]],
+["한국 정치의 가장 큰 갈등 원인은 무엇이라고 보는가?",["분단과 냉전의 유산","권위주의와 민주화의 역사적 충돌","지역·세대·계층 등 국내 사회갈등","북한 문제와 안보를 둘러싼 가치 차이"]]
+];
+
+let idx=0, answers=Array(qs.length).fill(null);
+const labels=["대한제국과 개화기","동학·일제강점기","3·1운동과 임시정부","해방과 정부수립","6·25 전쟁","이승만 시대","박정희 시대","전두환과 민주화"];
+function begin(){document.getElementById("start").style.display="none";document.getElementById("test").style.display="grid";renderEras();render();}
+function renderEras(){document.getElementById("eras").innerHTML="<h3>역사 시대별 진행</h3>"+labels.map((x,i)=>`<div class="era ${Math.floor(idx/5)==i?'active':''}"><span class="dot">${i+1}</span>${x}</div>`).join("");}
+function render(){
+ const q=qs[idx],pct=Math.round((idx+1)/qs.length*100);
+ document.getElementById("counter").textContent=`${idx+1} / ${qs.length}`;document.getElementById("pct").textContent=pct+"%";document.getElementById("bar").style.width=pct+"%";document.getElementById("progressText").textContent=`${idx+1} / ${qs.length}`;
+ document.getElementById("question").innerHTML=`<span class="tag">${labels[Math.min(7,Math.floor(idx/5))]}</span><h2>${q[0]}</h2>`+q[1].map((o,i)=>`<label class="option ${answers[idx]===i?'selected':''}"><input type="radio" name="q" ${answers[idx]===i?'checked':''} onchange="choose(${i})"> ${String.fromCharCode(65+i)}. ${o}</label>`).join("");
+ document.getElementById("prev").disabled=idx===0;document.getElementById("next").textContent=idx===qs.length-1?"결과 보기":"다음";
+ renderEras();
+}
+function choose(i){answers[idx]=i;render()}
+function move(d){if(d===1&&answers[idx]===null){alert("가장 가까운 선택지를 하나 골라주세요.");return}idx+=d;if(idx>=qs.length){showResult();return}if(idx<0)idx=0;render()}
+function showResult(){
+ document.getElementById("test").style.display="none";document.getElementById("progressText").textContent="완료";
+ let raw=answers.reduce((s,a)=>s+(a??1),0);
+ // lower choices lean left, higher choices lean right; normalized to 1~7
+ let score=1+(raw/(qs.length*3))*6;
+ let level=Math.max(1,Math.min(7,Math.round(score))), names=["극좌","좌","중도좌","중도","중도우","우","극우"];
+ let pos=((level-1)/6)*100;
+ const axes=[
+  ["민족주의",Math.round(100-raw/((qs.length)*3)*100)],
+  ["반공·안보",Math.round(raw/((qs.length)*3)*100)],
+  ["민주주의",Math.round(100-(raw/((qs.length)*3)*45))],
+  ["산업화 평가",Math.round(35+raw/((qs.length)*3)*65)],
+  ["대미 인식",Math.round(30+raw/((qs.length)*3)*70)],
+  ["대북 인식",Math.round(25+raw/((qs.length)*3)*75)]
+ ];
+ document.getElementById("result").classList.add("show");
+ document.getElementById("result").innerHTML=`<div style="text-align:center;color:#64748b">당신의 한국 정치사적 성향은</div><div class="level">${names[level-1]} <small>(${level}단계)</small></div>
+ <div class="spectrum"><i class="marker" style="left:${pos}%"></i></div><div class="labels"><span>극좌</span><span>좌</span><span>중도좌</span><span>중도</span><span>중도우</span><span>우</span><span>극우</span></div>
+ <div class="grid2"><div class="box"><h3>역사 인식 프로필</h3>${axes.map(a=>`<div class="metric"><div class="metrichead"><span>${a[0]}</span><b>${a[1]}%</b></div><div class="meter"><i style="width:${a[1]}%"></i></div></div>`).join("")}</div>
+ <div class="box"><h3>결과 해석</h3><p style="line-height:1.8">${interpret(level)}</p><p style="color:#718096;font-size:13px">※ 이 결과는 정당 지지율이나 선거 성향을 예측하는 것이 아니라, 역사적 사건을 바라보는 응답 패턴을 7단계 축으로 단순화한 것입니다.</p></div></div>
+ <div class="summary"><b>한눈에 보기</b><br>당신은 한국 현대사의 갈림길에서 특정 하나의 이념보다 역사적 사건의 책임·정당성·국가의 역할을 어떻게 해석하는지에 따라 성향이 나타납니다. 같은 결과라도 세부 역사관은 서로 다를 수 있습니다.</div>
+ <button class="btn restart" onclick="location.reload()">다시 테스트하기</button>`;
+ window.scrollTo({top:document.getElementById("result").offsetTop-20,behavior:"smooth"});
+}
+function interpret(l){return [
+"민족주의·체제비판적 역사관이 강하게 나타납니다. 국가와 기존 권력보다 민중·자주·사회변화를 중시하는 경향입니다.",
+"권위주의와 냉전질서에 비판적이며 민주주의와 민족적 자주성을 중요하게 보는 경향이 있습니다.",
+"진보적 역사관이 있으면서도 반대편의 역사적 논리도 일정 부분 인정하는 경향입니다.",
+"서로 다른 역사적 서사를 비교하며 한쪽으로 쉽게 결론내리지 않는 균형형에 가깝습니다.",
+"국가의 생존·안보와 산업화의 성과를 비교적 긍정적으로 평가하면서 민주주의의 가치도 함께 인정하는 경향입니다.",
+"반공·안보와 국가발전의 역사적 의미를 중요하게 평가하는 경향이 있습니다. 다만 개인별 세부 축에서는 상당한 차이가 있을 수 있습니다.",
+"국가안보·반공·자유민주주의와 산업화의 역사적 성과를 강하게 중시하는 경향이 나타납니다."
+][l-1]}
+</script>
+</body>
+</html>
